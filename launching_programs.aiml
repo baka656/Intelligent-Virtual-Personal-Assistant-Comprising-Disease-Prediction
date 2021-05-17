@@ -1,0 +1,467 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	
+ <!-- Launching programs -->
+
+    <category>
+        <pattern>OPEN NAUTILUS</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>nautilus</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN NAUTILUS</pattern>
+         <template>
+            <srai>OPEN NAUTILUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CLOSE NAUTILUS</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>nautilus -q</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CLOSE NAUTILUS</pattern>
+         <template>
+            <srai>CLOSE NAUTILUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAKE ME HOME</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>nautilus ~</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAKE ME TO *</pattern>
+         <template>
+            <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>nautilus <star/></system>
+        </template>
+    </category>
+
+
+
+
+    <category>
+        <pattern>OPEN RHYTHMBOX</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> bash -c "rhythmbox &amp;> /dev/null &amp;" </system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN RHYTHMBOX *</pattern>
+        <template>
+             <srai>OPEN RHYTHMBOX</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN RHYTHMBOX *</pattern>
+        <template>
+             <srai>OPEN RHYTHMBOX</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN RHYTHMBOX</pattern>
+        <template>
+             <srai>OPEN RHYTHMBOX</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>OPEN CALCULATOR</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> calc </system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CALCULATOR *</pattern>
+        <template>
+             <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CALCULATOR *</pattern>
+        <template>
+             <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN CALCULATOR</pattern>
+        <template>
+             <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>OPEN WORD DOCUMENT</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start winword </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN WORD DOCUMENT</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start winword </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN Power point</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start powerpnt </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN paint window</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start mspaint </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start <star/> </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN taskmanager</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start taskmgr </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN Calendar</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start outlookcal: </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN Camera</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start microsoft.windows.camera: </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN settings</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start ms-settings: </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>Show me weather forecast</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start bingweather: </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN Recyclebin</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start shell:recyclebinfolder </system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN Recyclebin</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start shell:recyclebinfolder </system>
+        </template>
+        
+    </category>
+    <category>
+        <pattern>OPEN Microsoft teams</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start C:\Users\Admin\AppData\Local\Microsoft\Teams\Update.exe --processStart "Teams.exe" </system>
+        </template>
+        
+    </category>
+
+
+
+
+    <category>
+        <pattern>OPEN * Drive</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start <star/>: </system>
+        </template>
+        
+    </category>
+
+    
+
+    <category>
+        <pattern>OPEN * in C Drive</pattern>
+        <template>
+            <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+             <system> start C:\<star/> </system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN * in D Drive</pattern>
+        <template>
+            <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+             <system> start D:\<star/> </system>
+        </template>
+    </category>
+    
+
+
+
+    <category>
+        <pattern>what is the time now?</pattern>
+        <template>
+             
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CHROMIUM *</pattern>
+        <template>
+             <srai>OPEN CHROMIUM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CHROMIUM *</pattern>
+        <template>
+             <srai>OPEN CHROMIUM</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN CHROMIUM</pattern>
+        <template>
+             <srai>OPEN CHROMIUM</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>OPEN BROWSER</pattern>
+        <template>
+             <srai>OPEN CHROMIUM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN BROWSER *</pattern>
+        <template>
+             <srai>OPEN CHROMIUM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN BROWSER *</pattern>
+        <template>
+             <srai>OPEN CHROMIUM</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN BROWSER</pattern>
+        <template>
+             <srai>OPEN CHROMIUM</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>GOOGLE *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> chromium-browser "http://www.google.com/search?q=<star/>"</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>YOUTUBE *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> chromium-browser "https://www.youtube.com/results?search_query=<star/>"</system>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>GOOGLE MAPS *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> chromium-browser "https://www.google.co.in/maps/search/<star/>"</system>
+        </template>
+    </category>
+
+     <category>
+        <pattern>SEARCH FOR * ON GOOGLE MAPS</pattern>
+        <template>
+             <srai>GOOGLE MAPS <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH FOR * IN GOOGLE MAPS</pattern>
+        <template>
+             <srai>GOOGLE MAPS <star/></srai>
+        </template>
+    </category>
+
+
+</aiml>

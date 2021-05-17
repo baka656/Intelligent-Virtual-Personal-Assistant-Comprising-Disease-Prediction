@@ -1,0 +1,8 @@
+argparse
+aiml
+SpeechRecognition
+pyttsx
+pyaudio
+gTTS
+pygame
+pyautogui
