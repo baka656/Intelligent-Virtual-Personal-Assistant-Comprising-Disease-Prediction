@@ -4,7 +4,7 @@
     <category>
         <pattern>HELLO</pattern>
         <template>
-            Well, hello!
+            Hi, Good to see you!!
         </template>
     </category>
 
@@ -16,7 +16,7 @@
     </category>
     
     <category>
-        <pattern>JARVIS</pattern>
+        <pattern>ROSS</pattern>
         <template>
             <random>
                 <li>Welcome home sir!</li> 
@@ -60,14 +60,14 @@
     </category>
 
     <category>
-        <pattern>JARVIS *</pattern>
+        <pattern>R.O.S.S *</pattern>
         <template>
             <srai><star/></srai>
         </template>
     </category>
 
     <category>
-        <pattern>* JARVIS</pattern>
+        <pattern>* R.O.S.S</pattern>
         <template>
             <srai><star/></srai>
         </template>
@@ -76,70 +76,27 @@
     <category>
         <pattern>Who ARE YOU</pattern>
         <template>
-            I'm J.A.R.V.I.S
+            I'm ROSS, your Personal Assistant
         </template>
     </category>
 
     <category>
-        <pattern>WHO CREATED YOU</pattern>
+        <pattern>Tell me a joke</pattern>
         <template>
-            Nihal Singh created me!
+            <random>
+                <li>What is the most shocking city in the world? Electricity ha ha sounds funny right</li>
+                <li>Why don't some couples go to gym? Because some relationships don't work out ha ha</li>
+                <li>What is the Bat's fauoarite way of romancing? Going on blind dates ha ha</li>
+        </random>
         </template>
     </category>
 
-    <category>
-        <pattern>WHO MADE YOU</pattern>
-        <template>
-            Nihal Singh made me!
-        </template>
-    </category>
+    
 
     <category>
-        <pattern>WHO CREATED JARVIS</pattern>
+        <pattern>who is R.O.S.S</pattern>
         <template>
-            Nihal Singh created me!
-        </template>
-    </category>
-
-    <category>
-        <pattern>WHO IS YOUR CREATOR</pattern>
-        <template>
-            Nihal Singh created me!
-        </template>
-    </category>
-
-    <category>
-        <pattern>WHO IS NIHAL SINGH</pattern>
-        <template>
-            Nihal Singh is my father!
-        </template>
-    </category>
-
-    <category>
-        <pattern>WHO IS nihal111</pattern>
-        <template>
-            nihal111 is Nihal Singh.
-        </template>
-    </category>
-
-    <category>
-        <pattern>WHO IS YOUR FATHER</pattern>
-        <template>
-            Nihal Singh is my father.
-        </template>
-    </category>
-
-    <category>
-        <pattern>WHO IS YOUR MOTHER</pattern>
-        <template>
-            It's a secret. Ask my father.
-        </template>
-    </category>
-
-    <category>
-        <pattern>WHAT DOES JARVIS STAND FOR</pattern>
-        <template>
-            JARVIS stands for Just A Rather Very Intelligent System
+            I am R.O.S.S, It is my name
         </template>
     </category>
 
@@ -402,6 +359,28 @@
         <pattern>take a note</pattern>        
         <template>
             
+        </template>
+    </category>
+    <category>
+        <pattern>Exit</pattern>        
+        <template>
+        <random>
+               <li>Bye Bye Take care!!</li>
+               <li>See you later</li>
+               <li>Have a nice day, Thank you!!</li>
+            </random>
+            <system>exit</system>
+        </template>
+    </category>
+    <category>
+        <pattern>hello who is this</pattern>        
+        <template>
+        <random>
+               <li>I am Ross, your personal assistant</li>
+               <li>I am Ross, your personal assistant</li>
+               
+            </random>
+            <system>exit</system>
         </template>
     </category>
 </aiml>

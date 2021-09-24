@@ -43,7 +43,12 @@
     <category>
         <pattern>SEARCH FOR * ON GOOGLE></pattern>
         <template>
-             <srai>GOOGLE <star/></srai>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> start chrome "http://www.google.com/search?q=<star/>"</system>
         </template>
     </category>
 
@@ -81,7 +86,12 @@
     <category>
         <pattern>SEARCH FOR * ON YOUTUBE></pattern>
         <template>
-             <srai>YOUTUBE <star/></srai>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> start chrome "https://www.youtube.com/results?search_query=<star/>"</system>
         </template>
     </category>
 
@@ -127,19 +137,21 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> start chrome "https://www.youtube.com/results?search_query=<star/>"</system>
+            <system> start chrome "https://music.youtube.com/search?q=<star/>"</system>
         </template>
     </category>
 
+  
+
     <category>
-        <pattern>PLAY SONG *</pattern>
+        <pattern>play a song for me</pattern>
         <template>
              <random>
-               <li>Sure thing! </li>
-               <li>Right away, sir! </li>
-               <li>On it! </li>
+               <li><system> start D:\R.O.S.S_The_Personal_Assistant\songs\3.mp3</system></li>
+               <li><system> start D:\R.O.S.S_The_Personal_Assistant\songs\2.mp3</system> </li>
+               <li><system> start D:\R.O.S.S_The_Personal_Assistant\songs\1.mp3</system> </li>
             </random>
-            <system> start chrome "https://www.youtube.com/results?search_query=<star/>"</system>
+        
         </template>
     </category>
 

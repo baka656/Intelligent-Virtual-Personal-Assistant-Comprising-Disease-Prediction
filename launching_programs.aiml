@@ -304,6 +304,18 @@
         </template>
         
     </category>
+    <category>
+        <pattern>OPEN Microsoft</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> start C:\Users\Admin\AppData\Local\Microsoft\Teams\Update.exe --processStart "Teams.exe" </system>
+        </template>
+        
+    </category>
 
 
 
